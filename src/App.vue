@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <DbQuillVue  ></DbQuillVue>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DbQuillVue from '@/components/db-quill-vue.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DbQuillVue
+  },
+  methods:{
+    // 自定义图片上传得回调
+    imgUploadCallBack(obj, insertImg){
+      console.log('callBack', obj, insertImg)
+    }
   }
 }
 </script>
