@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import DbQuillVue from '@/components/db-quill-vue.vue'
+import DbQuillVue from 'db-quill-vue'
+// import DbQuillVue from '@/components/db-quill-vue.vue'
 
 export default {
   name: 'App',
